@@ -5,22 +5,29 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="origin-trial" 
-        content="ApbyCprSSGVaT3D3B6PtIv+n/9OBJNNvn90FOjL7bJcSHnPiF3EWtIu0cucMH4cSEaJfG+5/wMev1YBGHQNkHw0AAABLeyJvcmlnaW4iOiJodHRwczovLzAuMC4wLjA6MzAwMCIsImZlYXR1cmUiOiJXZWJDb2RlY3MiLCJleHBpcnkiOjE2MjYyMjA3OTl9"
-    >
+    <meta http-equiv="origin-trial"
+        content="ApbyCprSSGVaT3D3B6PtIv+n/9OBJNNvn90FOjL7bJcSHnPiF3EWtIu0cucMH4cSEaJfG+5/wMev1YBGHQNkHw0AAABLeyJvcmlnaW4iOiJodHRwczovLzAuMC4wLjA6MzAwMCIsImZlYXR1cmUiOiJXZWJDb2RlY3MiLCJleHBpcnkiOjE2MjYyMjA3OTl9">
     <!-- The link below is for the mic and camera icons in this demo -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
-        crossorigin="anonymous" 
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="container app-root">
         <!-- Preview view -->
         <div id="js-preview-view" class="container preview__root">
+            <div>
+                <span>sdkKey: <input id="info_sdkkey" type="text" value=""></span>
+                <span>sdkSecret: <input id="info_sdksecret" type="text" value=""></span>
+                <span>topic: <input id="info_topic" type="text" value=""></span>
+                <span>name: <input id="info_name" type="text" value=""></span>
+                <span>password: <input id="info_password" type="text" value=""></span>
+                <span>role: <select id="info_role">
+                        <option value="1">host</option>
+                        <option value="0">attendee</option>
+                    </select></span>
+            </div>
             <span>
                 <h1>Join Video Session</h1>
             </span>
@@ -60,8 +67,7 @@
                     <i id="js-webcam-icon" class="fas fa-video webcam__off"></i>
                 </button>
                 <div class="vertical-divider"></div>
-                <button id="js-leave-button" 
-                    class="meeting-control-button meeting-control-button__leave-session">
+                <button id="js-leave-button" class="meeting-control-button meeting-control-button__leave-session">
                     <i id="js-leave-session-icon" class="fas fa-phone"></i>
                 </button>
             </div>
